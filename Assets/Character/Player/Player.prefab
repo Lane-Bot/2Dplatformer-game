@@ -265,7 +265,7 @@ GameObject:
   - component: {fileID: 789887719518117032}
   m_Layer: 7
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -516,6 +516,10 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 14380ce5-1f14-4c59-8169-1f6a56de4cbf
     m_ActionName: Player/RangeAttack[/Keyboard/f]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 780d0017-96fa-4bb4-99b4-ad26850390bb
+    m_ActionName: UI/Escape[/Keyboard/escape]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -616,7 +620,11 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  damageableDeath:
+    m_PersistentCalls:
+      m_Calls: []
   _maxHealth: 100
+  _health: 100
   _IsAlive: 1
   timeSinceHit: 0
   invicibilityTimer: 1

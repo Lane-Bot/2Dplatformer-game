@@ -80,7 +80,7 @@ public class PlayerController : MonoBehaviour
     {
         get
         {
-            return animator.GetBool(AnimationString.IsAlive);
+            return animator.GetBool(AnimationString.IsAlive);           
         }
     }
 

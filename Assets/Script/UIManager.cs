@@ -4,9 +4,12 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
+
 
 public class UIManager : MonoBehaviour
 {
+    
     public GameObject damageTextPrefab;
     public GameObject healthTextPrefab;
 
@@ -15,7 +18,6 @@ public class UIManager : MonoBehaviour
     private void Awake()
     {
         gameCanvas= FindObjectOfType<Canvas>();
-        
     }
 
     private void OnEnable() // make multiple time
@@ -62,8 +64,9 @@ public class UIManager : MonoBehaviour
 #elif (UNITY_STANDALONE) //run on pc or mac
             Application.Quit(); 
 #elif (UNITY_WEBGL) // run on web
-SceneManager.LoadScene("QuitScene")
+SceneManager.LoadScene("QuitScene");
 #endif
+
         }
     }
 }
